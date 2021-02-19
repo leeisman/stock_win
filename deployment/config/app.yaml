@@ -1,0 +1,18 @@
+scraper:
+  scrape_mode: "yahoo"
+  yahoo_url: "https://tw.stock.yahoo.com/_td/api/resource/StockServices.rank;exchange=ALL;limit=100;offset=%d;period=1D;sortBy=-volume?bkt=tw-qsp-exp&device=desktop&ecma=default&feature=&intl=tw&lang=zh-Hant-TW&partner=none&prid=577nuahg2pm8h&region=TW&site=finance&tz=Asia%%2FTaipei&ver=1.2.734&returnMeta=true"
+database:
+  read:
+    debug: true
+    host: mysql
+    username: "root"
+    password: "root"
+    port: "3306"
+    dbname: "stock_win"
+  write:
+    debug: true
+    host: mysql
+    username: "root"
+    password: "root"
+    port: "3306"
+    dbname: "stock_win"
